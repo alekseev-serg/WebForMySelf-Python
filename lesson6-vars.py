@@ -20,3 +20,10 @@ TEST = 20
 print(TEST)
 TEST = 40
 print(TEST)
+
+test = None
+print(test)
+
+x, y = (1, 5)
+print(x)
+print(y)
