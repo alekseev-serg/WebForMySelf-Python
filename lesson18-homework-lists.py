@@ -15,3 +15,24 @@ time1 = 11.8 --> litres = 5
 4. Дана строка 'Hello world!'. Проверить, если в строке есть символ пробела, тогда преобразовать строку к верхнему
 регистру, если пробела нет, тогда к нижнему регистру.
 """
+
+print('solution - 1')
+digit = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print([item * 2 for item in digit])
+
+print('solution - 2')
+digitMore = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print([item ** 2 for item in digitMore], sum([item ** 2 for item in digitMore]))
+
+print('solution - 3')
+import math
+
+time = 11.8
+print(math.floor(time * 0.5))
+
+print('solution - 4')
+words = 'Hello world!'
+if ' ' in words:
+    print(words.upper())
+else:
+    print(words.lower())
