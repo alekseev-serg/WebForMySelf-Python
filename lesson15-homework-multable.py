@@ -2,5 +2,16 @@
 print('Таблица умножения!')
 for i in range(1, 10):
     for j in range(1, 10):
-        print(f'{i} x {j} = {i * j}\t', end= '')
+        print(f'{i} x {j} = {i * j}\t', end='')
     print('')
+
+
+def multiply():
+    print('Таблица умножения!')
+    for i in range(1, 10):
+        for j in range(1, 10):
+            print(f'{i} x {j} = {i * j}\t', end='')
+        print('')
+
+
+print(multiply())
