@@ -19,5 +19,12 @@ while True:
         print('Мы загадали число побольше')
     elif answer == number:
         print(f'Ты совершенно прав, угала с {i} попыток')
+        word = input('Сыграешь ещё разок (Yes/No): > ')
+        if word == 'Yes':
+            number = random.randint(1, 100)
+            i = 0
+            continue
+        else:
+            break
     else:
         print('Попробуй ещё раз')
