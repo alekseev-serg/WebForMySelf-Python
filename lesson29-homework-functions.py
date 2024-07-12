@@ -24,3 +24,13 @@ find_sum(10) - return 33 (3 + 5 + 6 + 9 + 10)
 
 def find_sum(n):
     pass
+
+
+"""
+Дан список имён. Выберите в новый список только те имена, которые состоят из 4-х букв.
+names = ["Ryan", "Kieran", "Mark", "John", "David", "Paul"] ---> names = ["Ryan", "Mark", "John", "Paul"]
+"""
+
+
+def get_names(names):
+    pass
