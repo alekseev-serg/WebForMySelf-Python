@@ -29,5 +29,3 @@ def functest(a, x, *args, **kwargs):
 
 
 functest(1, 2, 3, 4, b='test', c='hi')
-
-
