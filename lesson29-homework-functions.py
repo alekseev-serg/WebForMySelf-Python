@@ -9,7 +9,7 @@ print(odd_ball(["even", 10, "odd", 2, "even"])) - True
 
 
 def odd_ball(arr):
-    return True if arr.index("odd") in arr else False
+    return arr.index("odd") in arr
 
 
 print(odd_ball(["even", 10, "odd", 2, "even"]))
@@ -34,7 +34,7 @@ def find_sum(n):
 
 
 def find_sum2(n):
-    return sum([item for item in [i for i in range(1, n + 1)] if item % 3 == 0 or item % 5 == 0])
+    return sum(item for item in range(1, n + 1) if item % 3 == 0 or item % 5 == 0)
 
 
 print(find_sum2(10))
