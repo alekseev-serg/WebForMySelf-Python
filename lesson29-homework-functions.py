@@ -9,8 +9,10 @@ print(odd_ball(["even", 10, "odd", 2, "even"])) - True
 
 
 def odd_ball(arr):
-    pass
+    return True if arr.index("odd") in arr else False
 
+
+print(odd_ball(["even", 10, "odd", 2, "even"]))
 
 """
 Напишите функцию find_sum(n), где аргумент функции - это конечный элемент последовательности включительно.
@@ -23,8 +25,19 @@ find_sum(10) - return 33 (3 + 5 + 6 + 9 + 10)
 
 
 def find_sum(n):
-    pass
+    arr = [i for i in range(1, n + 1)]
+    new_arr = []
+    for item in arr:
+        if item % 3 == 0 or item % 5 == 0:
+            new_arr.append(item)
+    return sum(new_arr)
 
+
+def find_sum2(n):
+    return sum([item for item in [i for i in range(1, n + 1)] if item % 3 == 0 or item % 5 == 0])
+
+
+print(find_sum2(10))
 
 """
 Дан список имён. Выберите в новый список только те имена, которые состоят из 4-х букв.
@@ -33,4 +46,7 @@ names = ["Ryan", "Kieran", "Mark", "John", "David", "Paul"] ---> names = ["Ryan"
 
 
 def get_names(names):
-    pass
+    return [name for name in names if len(name) == 4]
+
+
+print(get_names(["Ryan", "Kieran", "Mark", "John", "David", "Paul"]))
