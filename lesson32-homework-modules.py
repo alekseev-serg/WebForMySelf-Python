@@ -10,12 +10,12 @@ folder
 
 import os
 
-path = os.getcwd() + '/modules/'
+path = os.getcwd() + '/modules'
 
 for root, dirs, files in os.walk(path):
     level = root.replace(path, '').count(os.sep)
     indent = ' ' * 4 * (level)
-    print(f"{indent}{os.path.basename(root)}/")
+    print(f"{indent}[{os.path.basename(root)}]")
     sub_indent = ' ' * 4 * (level + 1)
     for file in files:
         print(f"{sub_indent}{file}")
