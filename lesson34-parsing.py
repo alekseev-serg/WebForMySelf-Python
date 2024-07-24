@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 import urllib.request
 
-url = 'https://www.ua-football.com/sport'
-request = urllib.request.urlopen(url)
+url = 'https://www.ua-football.com'
+request = urllib.request.urlopen('https://www.ua-football.com/sport')
 html = request.read()
 
 soup = BeautifulSoup(html, 'html.parser')
@@ -12,7 +12,7 @@ result = []
 for item in news:
     title = item.find('span', class_='d-block').get_text(strip=True)
     description = item.find('span', class_='name-dop').get_text(strip=True)
-    href = item.find('a').get('href')
+    href = url + item.find('a').get('href')
     result.append({
         'title': title,
         'description': description,
