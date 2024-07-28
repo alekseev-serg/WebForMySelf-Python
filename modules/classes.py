@@ -7,4 +7,4 @@ class Person:
         self.sex = sex
 
     def print_info(self):
-        print(f'Hello, {self.name}')
+        print(f'Hello, {self.name}, Age is {self.age}')
