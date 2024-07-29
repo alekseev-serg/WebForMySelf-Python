@@ -1,9 +1,9 @@
 class Person:
     # name = 'John'
 
-    def __init__(self, name):
+    def __init__(self, name, age):
         self.name = name
-        self.__age = 20
+        self.__age = age
 
     def print_info(self):
         print(f'Hello, {self.name}, Age is {self.__age}')
