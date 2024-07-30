@@ -27,3 +27,6 @@ class Person:
             self.__age = value
         else:
             self.__age = 18
+
+    def __str__(self):
+        return f'Class: {self.__class__.__name__}'
